@@ -45,3 +45,8 @@ footer {
     margin-top: 20px;
     text-align: right;
 }
+.footer-image {
+    max-width: 100%;  /* Ensures the image fits within the footer's width */
+    height: auto;     /* Maintains the aspect ratio */
+    max-height: 50px; /* Adjust this value to control the image's height */
+}
