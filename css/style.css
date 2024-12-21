@@ -39,11 +39,11 @@ h2, h3 {
 }
 
 footer {
-    padding: 10px;
-    background-color: #005f73; /* Dark background for footer */
-    color: #fff; /* White text */
-    margin-top: 20px;
     text-align: right;
+    padding: 10px;
+    background-color: #005f73;
+    color: #fff;
+    margin-top: 20px;
 }
 .footer-image {
     max-width: 100%;  /* Ensures the image fits within the footer's width */
