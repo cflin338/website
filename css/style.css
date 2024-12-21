@@ -5,7 +5,7 @@ body {
     background-color: #e0e0e0; /* Light gray background for the entire page */
     display: flex;
     /*justify-content: center;  Centers horizontally */
-    /*align-items: center;     Centers vertically */
+    align-items: center;     /*Centers vertically */
     height: 100vh;          /* Full viewport height */
 }
 
