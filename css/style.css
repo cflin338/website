@@ -20,14 +20,15 @@ body {
 }
 
 header {
-    color: #fff; /* White text */
+    color: #fff; /* White text for the header wrapper */
     padding: 20px;
     text-align: center;
     background-color: #005f73; /* Dark background for the header */
 }
-h1{
-    color: #fff;
-    text-align:center;
+
+h1 {
+    color: #ffffff; /* White text for header title */
+    text-align: center;
 }
 
 main {
@@ -35,7 +36,7 @@ main {
 }
 
 p {
-  text-align: left; /* Ensures paragraphs are left-aligned */
+    text-align: left; /* Ensures paragraphs are left-aligned */
 }
 
 h2 {
@@ -51,4 +52,3 @@ footer {
     margin-top: 20px;
     text-align: right;
 }
-
