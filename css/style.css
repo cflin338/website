@@ -26,11 +26,6 @@ header {
     background-color: #005f73; /* Dark background for the header */
 }
 
-h1 {
-    color: #ffffff; /* White text for header title */
-    text-align: center;
-}
-
 main {
     padding: 20px;
 }
@@ -45,7 +40,6 @@ h2 {
 }
 
 footer {
-    text-align: center;
     padding: 10px;
     background-color: #005f73; /* Dark background for footer */
     color: #fff; /* White text */
