@@ -34,7 +34,7 @@ p {
     text-align: left; /* Ensures paragraphs are left-aligned */
 }
 
-h2 {
+h2, h3 {
     color: #005f73; /* Dark teal color for headings */
     text-align: center;
 }
