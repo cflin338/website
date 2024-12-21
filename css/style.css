@@ -6,15 +6,16 @@ body {
 }
 
 .container {
-    width: 75%; /* Restrict width to 75% */
-    max-width: 1200px; /* Optional: adds a maximum width for large screens */
+    width: 100%; /* Restrict width to 75% */
+    max-width: 75%; /* Optional: adds a maximum width for large screens */
     margin: 0 auto; /* Center the container horizontally */
+    text-align: center;
     padding: 20px;
     background-color: #fff; /* White background for the content */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
     border-radius: 8px;
 }
-
+  
 header {
     color: #fff; /* White text */
     padding: 20px;
