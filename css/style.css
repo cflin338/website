@@ -45,3 +45,10 @@ footer {
     color: #fff; /* White text */
     margin-top: 20px;
 }
+p, ul, ol {
+  text-align: left; /* Ensures paragraphs and lists are left-aligned */
+}
+
+ul, ol {
+  margin-left: 20px; /* Optional: Adds some indentation to lists */
+}
