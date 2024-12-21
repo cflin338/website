@@ -6,20 +6,19 @@ body {
     display: flex;
     justify-content: center; /* Centers horizontally */
     align-items: center;    /* Centers vertically */
+    height: 100vh;          /* Full viewport height */
 }
-
 
 .container {
     width: 75%; /* Restrict width to 75% */
     max-width: 75%; /* Optional: adds a maximum width for large screens */
-    /*margin: 0 auto;  Center the container horizontally */
     text-align: center;
     padding: 20px;
     background-color: #fff; /* White background for the content */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
     border-radius: 8px;
 }
-  
+
 header {
     color: #fff; /* White text */
     padding: 20px;
@@ -30,12 +29,14 @@ header {
 main {
     padding: 20px;
 }
+
 p {
   text-align: left; /* Ensures paragraphs are left-aligned */
 }
+
 h1, h2, h3 {
     color: #005f73; /* Dark teal color for headings */
-    text-align:center;
+    text-align: center;
 }
 
 footer {
@@ -45,10 +46,4 @@ footer {
     color: #fff; /* White text */
     margin-top: 20px;
 }
-p, ul, ol {
-  text-align: left; /* Ensures paragraphs and lists are left-aligned */
-}
 
-ul, ol {
-  margin-left: 20px; /* Optional: Adds some indentation to lists */
-}
