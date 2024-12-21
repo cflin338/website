@@ -12,7 +12,7 @@ body {
 .container {
     width: 75%; /* Restrict width to 75% */
     max-width: 75%; /* Optional: adds a maximum width for large screens */
-    text-align: center;
+    /*text-align: center;*/
     padding: 20px;
     background-color: #fff; /* White background for the content */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
