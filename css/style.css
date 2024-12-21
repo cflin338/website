@@ -2,22 +2,21 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #e0e0e0; /* Light gray background for the entire page */
+    background-color: #e0e0e0;
     display: flex;
-    justify-content: center;  /*Centers horizontally */
-    align-items: center;     /*Centers vertically */
-    height: 100vh;          /* Full viewport height */
+    justify-content: center;  /* Centers horizontally */
+    align-items: flex-start; /* Aligns content at the top */
+    height: 100vh;
 }
 
 .container {
     width: 75%; /* Restrict width to 75% */
-    max-width: 75%; /* Optional: adds a maximum width for large screens */
-    /*text-align: center;*/
     padding: 20px;
-    background-color: #fff; /* White background for the content */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
 }
+
 
 header {
     color: #fff; /* White text for the header wrapper */
