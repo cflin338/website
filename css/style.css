@@ -25,6 +25,10 @@ header {
     text-align: center;
     background-color: #005f73; /* Dark background for the header */
 }
+h1{
+    color: #fff;
+    text-align:center;
+}
 
 main {
     padding: 20px;
@@ -34,7 +38,7 @@ p {
   text-align: left; /* Ensures paragraphs are left-aligned */
 }
 
-h2, h3 {
+h2 {
     color: #005f73; /* Dark teal color for headings */
     text-align: center;
 }
