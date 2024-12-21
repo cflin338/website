@@ -30,7 +30,9 @@ header {
 main {
     padding: 20px;
 }
-
+p {
+  text-align: left; /* Ensures paragraphs are left-aligned */
+}
 h1, h2 {
     color: #005f73; /* Dark teal color for headings */
 }
