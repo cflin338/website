@@ -24,20 +24,19 @@ body {
     margin: 0;
     padding: 0;
     background-color: #e0e0e0;
-    display: flex;
+/*     display: flex;
     justify-content: center;  /* Centers horizontally */
     align-items: flex-start; /* Aligns content at the top */
-    height: 100vh;
-}
-
+    height: 100vh; */
+} 
 .container {
     width: 50%; 
+    margin: 0 auto;  /* auto left/right margins center it */
     padding: 20px;
     background-color: #fff;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
 }
-
 
 header {
     color: #fff; /* White text for the header wrapper */
