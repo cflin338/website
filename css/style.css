@@ -9,9 +9,14 @@
 }
 
 .section-image {
-    width: 100%; /* Ensures the image takes the full width of its container */
+/*     width: 100%; /* Ensures the image takes the full width of its container */
     height: auto;
-    max-height: 300px;  /* Adjust this value based on your section height */
+    max-height: 300px;  /* Adjust this value based on your section height */ */
+    max-width: 100%; /* Prevents overflow */
+    height: auto;    /* Keeps aspect ratio */
+    width: auto;     /* Don’t force it to fill column */
+    display: block;  /* Remove inline spacing */
+    margin: 0 auto;  /* Center if smaller than column */
 }
 
 .column2 {
