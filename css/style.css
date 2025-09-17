@@ -56,7 +56,7 @@ p {
 
 h2, h3 {
     color: #005f73; /* Dark teal color for headings */
-    text-align: center;
+    text-align: left;
 }
 
 footer {
