@@ -36,13 +36,20 @@ body {
 } 
 .container {
     width: 50%; 
+    max-width: 960px;  /* don't let it get too wide on giant monitors */
+    min-width: 400px;  /* don't let it shrink to unreadable */
     margin: 0 auto;  /* auto left/right margins center it */
     padding: 20px;
     background-color: #fff;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
 }
-
+@media (max-width: 800px) {
+    .container {
+        width: 95%;
+        min-width: unset; /* allow smaller than 400px if needed */
+    }
+}
 header {
     color: #fff; /* White text for the header wrapper */
     padding: 20px;
