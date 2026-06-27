@@ -1,84 +1,152 @@
-.flex-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start; /* Aligns items to the top */
-}
-
-.column1 {
-    width: 33%;  /* 1/3 of the container width */
-}
-
-.section-image {
-/*     width: 100%; /* Ensures the image takes the full width of its container */
-    height: auto;
-    max-height: 300px;  /* Adjust this value based on your section height */ */
-    max-width: 100%; /* Prevents overflow */
-    height: auto;    /* Keeps aspect ratio */
-    width: auto;     /* Don’t force it to fill column */
-    display: block;  /* Remove inline spacing */
-    margin: 0 auto;  /* Center if smaller than column */
-}
-
-.column2 {
-    width: 66%; /* Takes the remaining 2/3 of the container */
-    padding-left: 20px;
-}
-
+/* ===== Base ===== */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     background-color: #e0e0e0;
-/*     display: flex;
-    justify-content: center;  /* Centers horizontally */
-    align-items: flex-start; /* Aligns content at the top */
-    height: 100vh; */
-} 
+    color: #222;
+}
+
 .container {
-    width: 50%; 
+    width: 50%;
     max-width: 960px;  /* don't let it get too wide on giant monitors */
     min-width: 400px;  /* don't let it shrink to unreadable */
-    margin: 0 auto;  /* auto left/right margins center it */
+    margin: 0 auto;    /* auto left/right margins center it */
     padding: 20px;
     background-color: #fff;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
 }
+
 @media (max-width: 800px) {
     .container {
         width: 95%;
         min-width: unset; /* allow smaller than 400px if needed */
     }
 }
+
+/* ===== Header & nav ===== */
 header {
-    color: #fff; /* White text for the header wrapper */
+    color: #fff;
     padding: 20px;
     text-align: center;
-    background-color: #005f73; /* Dark background for the header */
+    background-color: #005f73;
+    border-radius: 8px 8px 0 0;
 }
 
+header h1 {
+    margin: 0 0 10px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* ===== Main content ===== */
 main {
     padding: 20px;
 }
 
 p {
-    text-align: left; /* Ensures paragraphs are left-aligned */
-}
-
-h2, h3 {
-    color: #005f73; /* Dark teal color for headings */
     text-align: left;
 }
 
+h2, h3 {
+    text-align: left;
+}
+
+h2 {
+    color: #005f73; /* dark teal */
+    font-size: 1.5em;
+    border-bottom: 2px solid #005f73;
+    padding-bottom: 4px;
+    margin-top: 28px;
+    margin-bottom: 12px;
+}
+
+h3 {
+    color: #444; /* muted gray, secondary to the teal h2 */
+    font-size: 1.1em;
+    font-weight: 600;
+    margin-top: 16px;
+    margin-bottom: 6px;
+    padding-left: 8px;
+    border-left: 3px solid #94d2bd; /* light teal accent */
+}
+
+a {
+    color: #005f73;
+}
+
+/* ===== Two-column intro layout ===== */
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.column1 {
+    width: 33%;  /* 1/3 of the container width */
+}
+
+.column2 {
+    width: 66%;  /* remaining 2/3 of the container */
+    padding-left: 20px;
+}
+
+.section-image {
+    max-width: 100%; /* prevent overflow */
+    height: auto;    /* keep aspect ratio */
+    width: auto;     /* don't force it to fill the column */
+    display: block;  /* remove inline spacing */
+    margin: 0 auto;  /* center if smaller than column */
+}
+
+@media (max-width: 800px) {
+    .flex-container {
+        flex-direction: column;
+    }
+
+    .column1,
+    .column2 {
+        width: 100%;
+        padding-left: 0;
+    }
+}
+
+/* ===== Notes list ===== */
+.notes-list {
+    text-align: left;
+}
+
+.notes-list ul {
+    margin: 5px 0 15px;
+    padding-left: 40px; /* consistent indent under the headings */
+}
+
+.notes-list li {
+    margin-bottom: 4px;
+}
+
+/* ===== Footer ===== */
 footer {
     text-align: right;
     padding: 10px;
     background-color: #005f73;
     color: #fff;
     margin-top: 20px;
+    border-radius: 0 0 8px 8px;
 }
+
 .footer-image {
-    max-width: 100%;  /* Ensures the image fits within the footer's width */
-    height: auto;     /* Maintains the aspect ratio */
-    max-height: 50px; /* Adjust this value to control the image's height */
+    max-width: 100%;  /* fit within the footer's width */
+    height: auto;     /* maintain aspect ratio */
+    max-height: 50px;
 }
